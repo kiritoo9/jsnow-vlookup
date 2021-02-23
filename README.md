@@ -13,26 +13,28 @@
 </ul>
 
 # HOW TO USE
-> $("#yourId).jsnowlookup({
-  title: 'Find users',
-  search: true,
-  limit: 5,
-  data: [
-    {
-      name: 'person-1',
-      age: 'dummy-age',
-      phone: 'dummy-phone',
-      email: 'dummy-email',
-      address: 'dummy-address',
-    }, {
-      name: 'person-1',
-      age: 'dummy-age',
-      phone: 'dummy-phone',
-      email: 'dummy-email',
-      address: 'dummy-address',
-    }, ... etc
-  ]
-});
+<pre>
+  $("#yourId).jsnowlookup({
+    title: 'Find users',
+    search: true,
+    limit: 5,
+    data: [
+      {
+        name: 'person-1',
+        age: 'dummy-age',
+        phone: 'dummy-phone',
+        email: 'dummy-email',
+        address: 'dummy-address',
+      }, {
+        name: 'person-1',
+        age: 'dummy-age',
+        phone: 'dummy-phone',
+        email: 'dummy-email',
+        address: 'dummy-address',
+      }, ... etc
+    ]
+  });
+</pre>
 
 # VERSION
 > 1.0.1
