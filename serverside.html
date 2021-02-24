@@ -21,7 +21,7 @@
       <div class="row">
         <div class="col-sm-8 offset-2">
           <div class="jumbotron">
-            <h2>Jsnow Vlookup</h2>
+            <h2>Jsnow Vlookup (Serverside)</h2>
             <p>
               You can simply search data in <code class="text-danger">input:text</code> using <code class="text-danger">.jsnowlookup()</code>. The library will generate search and pagination feature that make you easily to find the data.
             </p>
@@ -41,21 +41,23 @@
     <script src="./jsnow-vlookup.min.js"></script>
     <script>
         $(function() {
-          var data = [];
-          for(var i = 1; i <= 20; i++) {
-            data.push({
-              name: 'person-'+i,
-              age: 'dummy-age',
-              phone: 'dummy-phone',
-              email: 'dummy-email',
-              address: 'dummy-address',
-            })
-          }
           $("#jsnow-vlookup").jsnowlookup({
             title: 'Find users',
             search: true,
             limit: 5,
-            data: data
+            serverside: {
+              enabled: true,
+              url : 'YOUR_API',
+              columns: [
+                {
+                  title: 'Username',
+                  column: 'username'
+                }, {
+                  title: 'Full Name',
+                  column: 'full_name'
+                }
+              ]
+            }
           });
         });
     </script>
