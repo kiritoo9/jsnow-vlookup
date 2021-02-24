@@ -58,7 +58,7 @@
       ]
     }
   });
-<pre>
+</pre>
 <p>
   The <code>.jsnowlookup()</code> will send to your API with this properties:<br />
   <pre>
