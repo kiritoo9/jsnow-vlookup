@@ -5,11 +5,11 @@
 
 # OPTIONS
 <ul>
-  <li>title (string) // The title of your popup</li>
-  <li>search (boolean) // Set true if you want to add search feature (default true)</li>
-  <li>limit (int) // Limit data in table (default 10)</li>
-  <li>key (string) // Value that will be a callback, referenced to your data</li>
-  <li>data (array) // Data that you want to append in table</li>
+  <li><code>title</code>code> (string) --> The title of your popup</li>
+  <li><code>search</code>code> (boolean) --> Set true if you want to add search feature (default true)</li>
+  <li><code>limit</code>code> (int) --> Limit data in table (default 10)</li>
+  <li><code>key</code>code> (string) --> Value that will be a callback, referenced to your data</li>
+  <li><code>data</code>code> (array) --> Data that you want to append in table</li>
 </ul>
 
 # HOW TO USE
@@ -72,4 +72,4 @@
 </p>
 
 # VERSION
-> 1.1.1
+> 1.1.2
