@@ -71,5 +71,10 @@
   </pre>
 </p>
 
+# SERVERSIDE API EXAMPLE
+<p>
+  You can simply use api example using <code>php</code> in folder <code>/api</code>, but first you need to <code>IMPORT!</code> the <code>.sql</code> file!, put the <code>index.php</code> file in your server, and all will be fine!
+</p>
+
 # VERSION
-> 1.1.2
+> 1.1.3
