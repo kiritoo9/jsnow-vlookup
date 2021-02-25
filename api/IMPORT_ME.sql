@@ -1,7 +1,7 @@
 
 CREATE DATABASE IF NOT EXISTS jsnow_vlookup;
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) NOT NULL,
   `username` varchar(30) NOT NULL,
   `password` varchar(60) NOT NULL,
