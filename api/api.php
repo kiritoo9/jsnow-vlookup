@@ -3,6 +3,7 @@
 	class Api {
 
 		function __construct() {
+			header('Content-Type: application/json');
 			header('Access-Control-Allow-Origin: *');
 		}
 
@@ -101,7 +102,6 @@
         $total = $api->getTotalUser();
     }
 
-    header('Content-Type: application/json');
     echo json_encode([
         'total' => $total,
         'data' => $data

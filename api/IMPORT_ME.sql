@@ -1,5 +1,5 @@
 
-CREATE DATABASE jsnow_vlookup;
+CREATE DATABASE IF NOT EXISTS jsnow_vlookup;
 
 CREATE TABLE `users` (
   `id` int(10) NOT NULL,
