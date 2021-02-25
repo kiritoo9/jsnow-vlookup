@@ -74,7 +74,7 @@
 # SERVERSIDE API EXAMPLE
 <p>
   You can simply use api example using <code>php</code> in folder <code>/api</code>, but first you need to <code>IMPORT!</code> the <code>.sql</code> file!, <br />
-  Create folder in your web server and put the <code>api.php</code> inside the folder, and all will be fine!
+  Create folder in your web server with name <code>/jsnow-vlookup</code> and put the <code>api.php</code> inside the folder, and all will be fine!
 </p>
 
 # VERSION
