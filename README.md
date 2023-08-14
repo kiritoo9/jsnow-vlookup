@@ -1,9 +1,7 @@
-# JSNOW VLOOKUP
-<p>
-  This library will make you find data easily, using search and pagination feature, you can easily find your data!
-</p>
+## JSNOW VLOOKUP
+This library will make you find data easily, using search and pagination feature, you can easily find your data!
 
-# OPTIONS
+## OPTIONS
 <ul>
   <li><code>title</code> (string) --> The title of your popup</li>
   <li><code>search</code> (boolean) --> Set true if you want to add search feature (default true)</li>
@@ -12,8 +10,8 @@
   <li><code>data</code> (array) --> Data that you want to append in table</li>
 </ul>
 
-# HOW TO USE
-<pre>
+## HOW TO USE
+```javascript
   $("#yourId).jsnowlookup({
     title: 'Find users',
     search: true,
@@ -34,13 +32,11 @@
       }, ... etc
     ]
   });
-</pre>
+```
 
-# SERVERSIDE
-<p>
-  Add this line to the options
-<p>
-<pre>
+## SERVERSIDE
+Add this line to the options
+```javascript
   $("#yourid).jsnowlookup({
     ....
 
@@ -58,24 +54,21 @@
       ]
     }
   });
-</pre>
-<p>
-  The <code>.jsnowlookup()</code> will send to your API with this properties:<br />
-  <pre>
-    {
-      columns: 'columns that you defined in options',
-      limit: 'limit that you defined in options',
-      offset: 'offset of page to your query',
-      searchValue: 'string that you type in search bar'
-    }
-  </pre>
-</p>
+```
 
-# SERVERSIDE API EXAMPLE
-<p>
-  You can simply use api example using <code>php</code> in folder <code>/api</code>, but first you need to <code>IMPORT!</code> the <code>.sql</code> file!, <br />
-  Create folder in your web server with name <code>/jsnow-vlookup</code> and put the <code>api.php</code> inside the folder, and all will be fine!
-</p>
+The <code>.jsnowlookup()</code> will send to your API with this properties:<br />
+```javascript
+{
+  columns: 'columns that you defined in options',
+  limit: 'limit that you defined in options',
+  offset: 'offset of page to your query',
+  searchValue: 'string that you type in search bar'
+}
+```
 
-# VERSION
-> 1.1.3
+## SERVERSIDE API EXAMPLE
+You can simply use api example using <code>php</code> in folder <code>/api</code>, but first you need to <code>IMPORT!</code> the <code>.sql</code> file!, <br />
+Create folder in your web server with name <code>/jsnow-vlookup</code> and put the <code>api.php</code> inside the folder, and all will be fine!
+
+## VERSION
+1.1.3
