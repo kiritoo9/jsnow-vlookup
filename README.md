@@ -13,7 +13,7 @@ This library will make you find data easily, using search and pagination feature
 ## HOW TO USE
 
 ```javascript
-<code>$("#yourElementId).jsnowlookup(options)</code>
+$("#yourElementId).jsnowlookup(options)
 ```
 
 ```javascript
