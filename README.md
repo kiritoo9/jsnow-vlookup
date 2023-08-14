@@ -3,57 +3,62 @@ This library will make you find data easily, using search and pagination feature
 
 ## OPTIONS
 <ul>
-  <li><code>title</code> (string) --> The title of your popup</li>
-  <li><code>search</code> (boolean) --> Set true if you want to add search feature (default true)</li>
-  <li><code>limit</code> (int) --> Limit data in table (default 10)</li>
-  <li><code>key</code> (string) --> Value that will be a callback, referenced to your data</li>
-  <li><code>data</code> (array) --> Data that you want to append in table</li>
+  <li>(string) <code>title</code> -> The title of your popup</li>
+  <li>(boolean) <code>search</code> -> Set true if you want to add search feature (default true)</li>
+  <li>(int) <code>limit</code> -> Limit data in table (default 10)</li>
+  <li>(string) <code>key</code> -> Value that will be a callback, referenced to your data</li>
+  <li>(array) <code>data</code> -> Data that you want to append in table</li>
 </ul>
 
 ## HOW TO USE
+
 ```javascript
-  $("#yourId).jsnowlookup({
-    title: 'Find users',
-    search: true,
-    limit: 5,
-    data: [
-      {
-        name: 'person-1',
-        age: 'dummy-age',
-        phone: 'dummy-phone',
-        email: 'dummy-email',
-        address: 'dummy-address',
-      }, {
-        name: 'person-1',
-        age: 'dummy-age',
-        phone: 'dummy-phone',
-        email: 'dummy-email',
-        address: 'dummy-address',
-      }, ... etc
-    ]
-  });
+<code>$("#yourElementId).jsnowlookup(options)</code>
+```
+
+```javascript
+{
+  title: 'Find users',
+  search: true,
+  limit: 5,
+  data: [
+    {
+      name: 'person-1',
+      age: 'dummy-age',
+      phone: 'dummy-phone',
+      email: 'dummy-email',
+      address: 'dummy-address',
+    }, {
+      name: 'person-1',
+      age: 'dummy-age',
+      phone: 'dummy-phone',
+      email: 'dummy-email',
+      address: 'dummy-address',
+    }, ... etc
+  ]
+}
 ```
 
 ## SERVERSIDE
 Add this line to the options
 ```javascript
-  $("#yourid).jsnowlookup({
-    ....
+{
+  ....
 
-    serverside: {
-      enabled: true, // MUST BE TRUE!
-      url: 'https://domain.com', // YOUR API URL
-      columns: [
-        {
-          title: 'Username', // TO BE YOUR TITLE IN TABLE HEADER
-          column: 'username' // FIELD IN YOUR DATABASE
-        }, {
-          title: 'Full Name', // TO BE YOUR TITLE IN TABLE HEADER
-          column: 'full_name' // FIELD IN YOUR DATABASE
-        }, ... etc
-      ]
-    }
-  });
+  serverside: {
+    enabled: true, // MUST BE TRUE!
+    url: 'https://domain.com', // YOUR API URL
+    columns: [
+      {
+        title: 'Username', // TO BE YOUR TITLE IN TABLE HEADER
+        column: 'username' // FIELD IN YOUR DATABASE
+      }, {
+        title: 'Full Name', // TO BE YOUR TITLE IN TABLE HEADER
+        column: 'full_name' // FIELD IN YOUR DATABASE
+      }, ... etc
+    ]
+  }
+}
 ```
 
 The <code>.jsnowlookup()</code> will send to your API with this properties:<br />
